@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import { css } from "@emotion/react";
-import DayCard from "./dayWeatherCard";
+
+import DayCard from "./dayWeatherCard.js";
 
 const WeatherPage = (props) => {
   const styles = css`
@@ -39,6 +40,7 @@ const WeatherPage = (props) => {
   return (
     <div className='content' css={styles}>
       <h2>{props.city}</h2>
+
       <div className='forecast-card-container'>
         {props.forecast.map((weatherObj) => {
           let date = weatherObj.dt;

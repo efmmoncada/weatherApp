@@ -160,9 +160,9 @@ const DayCard = (props) => {
       {expanded && (
         <>
           <div className='temp'>
-            {upArrow}
-            {props.lowTemp} ºF
             {downArrow}
+            {props.lowTemp} ºF
+            {upArrow}
             {props.highTemp} ºF
           </div>
           <div className='percip'>

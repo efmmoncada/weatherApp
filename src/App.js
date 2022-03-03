@@ -65,7 +65,7 @@ function App(props) {
       />
       <h1>Whats the Weather??</h1>
       <Search updateCity={setCity} darkMode={darkMode} />
-      {loading && <Spinner />}
+      {loading && <Spinner darkMode={darkMode} />}
       {Object.keys(forecast).length != 0 && !loading && (
         <WeatherPage
           city={forecast.city.name}
